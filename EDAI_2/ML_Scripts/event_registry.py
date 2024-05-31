@@ -1,7 +1,7 @@
 from eventregistry import *
 import pandas as pd
 
-api_key = '492ae2f5-4d0a-445c-8063-a96c5876c1e2'
+api_key = 
 er = EventRegistry(apiKey = api_key)
 
 global_claim = ''

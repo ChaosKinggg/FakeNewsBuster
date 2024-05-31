@@ -1,0 +1,1 @@
+Congress leader Rahul Gandh

@@ -2,13 +2,13 @@ from ibm_watson import NaturalLanguageUnderstandingV1
 from ibm_watson.natural_language_understanding_v1 import Features, KeywordsOptions
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
-authenticator = IAMAuthenticator('aYwDWbWfxdlt8KgpZRj53VKJsofafjh80lVH9kxclTtX')
+authenticator = IAMAuthenticator()
 nlu = NaturalLanguageUnderstandingV1(
     version='2021-08-01',
     authenticator=authenticator
 )
 
-nlu.set_service_url('https://api.au-syd.natural-language-understanding.watson.cloud.ibm.com/instances/7e1fa7ba-2be7-478c-8265-ca795824491d')
+nlu.set_service_url()
 
 def extract_keywords_from_url(url):
     response = nlu.analyze(

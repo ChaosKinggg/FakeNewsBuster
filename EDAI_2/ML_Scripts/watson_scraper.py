@@ -11,15 +11,15 @@ import sys
 ''' ibm_watson setup 
 change Api key in authenticator and service URL '''
 
-authenticator = IAMAuthenticator('aYwDWbWfxdlt8KgpZRj53VKJsofafjh80lVH9kxclTtX')
+authenticator = IAMAuthenticator()
 nlu = NaturalLanguageUnderstandingV1(
     version='2021-08-01',
     authenticator=authenticator
 )
-nlu.set_service_url('https://api.au-syd.natural-language-understanding.watson.cloud.ibm.com/instances/7e1fa7ba-2be7-478c-8265-ca795824491d')
+nlu.set_service_url()
 
 # event_registry setup
-api_key = '492ae2f5-4d0a-445c-8063-a96c5876c1e2'
+api_key = 
 er = EventRegistry(apiKey = api_key)
 
 global_df = pd.DataFrame()
